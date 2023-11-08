@@ -18,3 +18,5 @@ HEADER = {
 PAYLOAD={}
 
 DOMAIN_LINK = "https://pubmed.ncbi.nlm.nih.gov/"
+
+ATTRIBUTE_HTML = '#similar-articles-list > li > div > a'

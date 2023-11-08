@@ -1,14 +1,12 @@
-from vncorenlp import VnCoreNLP
-import viet_text_tools
 import re
 import unicodedata
 
 def preprocess(text):
     text = str(text)
     text = unicodedata.normalize("NFC", text)
-    text = viet_text_tools.normalize_diacritics(text)
+    #text = viet_text_tools.normalize_diacritics(text)
     text = remove_emoji(text)
-    text = text.lower()
+    #text = text.lower()
     # text = re.sub(r'(\[[^]]*])', " ", text)
     # text = re.sub(r'(\([^)]*\))', " ", text)
     # text = re.sub(r'(<[^>]*>)', " ", text)
